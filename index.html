@@ -33,7 +33,7 @@
           </div>
           <div class="" id="">
             <label class="input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Search" />
+                <input id="input" type="text" class="grow" placeholder="Search" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
@@ -53,6 +53,22 @@
     </header>
 
     <main class="">
+     <!-- Open the modal using ID.showModal() method -->
+        <dialog id="myModal" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box" >
+            <div id="modalDiv">
+              
+            </div>
+            
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+
         <!-- category-section -->
       <section class="mb-12 flex gap-6 justify-center" id="categorySection">
 
