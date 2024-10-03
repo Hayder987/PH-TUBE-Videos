@@ -84,7 +84,7 @@ const displayVideo = (videos)=>{
     videoSection.classList.remove("grid");
     videoSection.innerHTML = `
     <div class= "h-[600px] flex flex-col justify-center items-center">
-    <img class=" w-[160px] mb-12" src="./assets/icon.png">
+    <img class=" w-[160px] mb-12" src="./assets/Icon.png">
     <h1 class= "text-3xl font-bold">Oops!! Sorry, There is no content here</h1>
     </div>
     `
