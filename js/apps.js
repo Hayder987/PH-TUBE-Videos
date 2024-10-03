@@ -66,7 +66,7 @@ const displayDetails = async(id)=>{
     
     let ModalDiv = document.getElementById("modalDiv");
     ModalDiv.innerHTML = `
-    <img class="mb-2" src=${data.video.thumbnail}>
+    <img class="mb-2 h-[300px] w-full" src=${data.video.thumbnail}>
     <h1 class="text-xl font-semibold mb-2">${data.video.title}</h1>
     <p>${data.video.description}</p>
     `
@@ -120,7 +120,7 @@ const displayVideo = (videos)=>{
         
       </div>
       <p class="ml-14 mb-4">${item.others.views} Views</p>
-      <button onclick= "displayDetails('${item.video_id}')" class="px-6 py-2 bg-btnBg text-white rounded-xl border-2 border-gray-300 text-xl ">Details</button>
+      <button onclick= "displayDetails('${item.video_id}')" class="px-6 py-2 bg-btnBg text-white rounded-xl text-xl ">Details</button>
     `
 
     videoSection.appendChild(div);
