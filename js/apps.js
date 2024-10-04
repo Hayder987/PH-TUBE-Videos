@@ -42,7 +42,7 @@ const displayCategory = (category)=>{
    const categorySection = document.getElementById("categorySection");
    category.map(data =>{
      let button = document.createElement("button");
-     button.classList.add("px-6","btnAll", "py-3", "rounded-xl", "border-2","border-gray-300","text-xl", "font-bold");
+     button.classList.add("px-4","md:px-6","btnAll", "py-3", "rounded-xl", "border-2","border-gray-300","md:text-xl","text-base", "font-bold");
      button.innerText = data.category;
      button.setAttribute("id", `btn-${data.category_id}`);
      
